@@ -9,7 +9,7 @@
     });
 
     function setLang(lang) {
-        log('lang=' + lang);
+        console.log('lang=' + lang);
 
         i18next.use(i18nextXHRBackend).init({
             backend: {
