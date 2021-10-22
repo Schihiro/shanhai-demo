@@ -3,5 +3,29 @@
         "label1": "メインコピー",
         "label2": "これはデモサイトです",
         "label3": "お問い合わせ"
+    },
+
+    "contact": {
+        "menu1": "メニュー",
+        "menu2": "メニュー",
+        "menu3": "メニュー",
+        "menu4": "メニュー",
+        "menu5": "メニュー",
+        "breadcrumb1": "ホーム",
+        "breadcrumb2": "お問い合わせページ",
+        "page-ttl": "お問い合わせ",
+        "form-title": "お問い合わせフォーム",
+        "form-subtitle": "必要事項を入力して下さい。",
+        "form-lead": "さらにご要望やご質問がございましたら、必要事項をご記入の上、どうぞ弊社へお気軽にお問い合わせ下さい。",
+        "formName": "名前",
+        "formEmail": "メールアドレス",
+        "formContent": "お問い合わせ内容",
+        "submit": "送信",
+        "footer-ttl1": "会社概要",
+        "footer-ttl2": "株式会社〇〇",
+        "footer-ttl3": "東京都港区芝8丁目0-0 ビジネスビル000号室",
+        "footer-ttl4": "電話番号：03-1234-5678",
+        "footer-ttl5": "FAX：03-1234-5678",
+        "footer-ttl6": "メール：info@example.com"
     }
 }

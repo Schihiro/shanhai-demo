@@ -3,5 +3,28 @@
         "label1": "主副本",
         "label2": "这是一个演示站点",
         "label3": "询问"
+    },
+
+    "contact": {
+        "menu1": "菜单",
+        "menu2": "菜单",
+        "menu3": "菜单",
+        "menu4": "菜单",
+        "menu5": "菜单",
+        "breadcrumb1": "家",
+        "breadcrumb2": "查询页面",
+        "page-ttl": "询问",
+        "form-title": "调查表",
+        "form-lead": "如果您有任何进一步的要求或问题，请填写必要的信息，并随时与我们联系。",
+        "formName": "姓名",
+        "formEmail": "电子邮件地址",
+        "formContent": "咨询内容",
+        "submit": "发送",
+        "footer-ttl1": "公司简介",
+        "footer-ttl2": "〇〇 私人有限公司",
+        "footer-ttl3": "东京都港区芝8-0-0 商务大厦000室",
+        "footer-ttl4": "电话号码：03-1234-5678",
+        "footer-ttl5": "传真：03-1234-5678",
+        "footer-ttl6": "电子邮件：info@example.com"
     }
 }

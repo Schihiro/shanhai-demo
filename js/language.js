@@ -2,8 +2,8 @@
     $(function () {
         setLang('ja');
 
-        $('#lang').on('change', function () {
-            var lang = $('#lang').val();
+        $('.lang').on('change', function () {
+            var lang = $('.lang').val();
             setLang(lang);
         });
     });
@@ -13,7 +13,7 @@
 
         i18next.use(i18nextXHRBackend).init({
             backend: {
-                loadPath: 'language/{{lng}}/string.json'
+                loadPath: '../language/{{lng}}/string.json'
             },
             debug: false,
             defaultLng: 'ja',

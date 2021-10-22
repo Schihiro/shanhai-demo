@@ -3,5 +3,28 @@
         "label1": "MAIN COPY",
         "label2": "This is a demo site",
         "label3": "Inquiry"
+    },
+
+    "contact": {
+        "menu1": "menu",
+        "menu2": "menu",
+        "menu3": "menu",
+        "menu4": "menu",
+        "menu5": "menu",
+        "breadcrumb1": "Home",
+        "breadcrumb2": "Inquiry page",
+        "page-ttl": "Inquiry",
+        "form-title": "Inquiry Form",
+        "form-lead": "If you have any further requests or questions, please fill in the necessary information and feel free to contact us.",
+        "formName": "Name",
+        "formEmail": "Email address",
+        "formContent": "Contents",
+        "submit": "SUBMIT",
+        "footer-ttl1": "Company Profile",
+        "footer-ttl2": "〇〇 Pvt. Ltd",
+        "footer-ttl3": "Room 000, Business Building, 8-0-0 Shiba, Minato-ku, Tokyo",
+        "footer-ttl4": "Phone：03-1234-5678",
+        "footer-ttl5": "FAX：03-1234-5678",
+        "footer-ttl6": "Email：info@example.com"
     }
 }
