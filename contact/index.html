@@ -68,10 +68,10 @@
 	<div class="container">
 	            <h2 class="sample-title" data-i18n="contact.form-title"></h2>
 <!--	            <h3 class="sample-subtitle" data-i18n="contact.form-subtitle"></h3>-->
-	            <p class="lead" data-i18n="contact.form-lead">Whether you have questions or you would just like to say hello, contact us.</p>
+	            <p class="lead" data-i18n="contact.form-lead"></p>
 	</div>  
 	<div class="container">       
-	            <form class="form1 mt-5">
+<!--	            <form class="form1 mt-5">-->
 	                <div class="form-group">
 	                    <label for="formName" data-i18n="contact.formName"></label>
 	                    <input type="text" class="form-control" id="formName">
@@ -95,7 +95,7 @@
 	                </div>
 	
 	                <button type="submit" class="btn btn-warning" data-i18n="contact.submit" onclick="sendMail()"></button>
-	            </form>
+<!--	            </form>-->
 	</div><!-- .container -->
 </article>
 <!------------------------------------------------------------------------------------------------------------------>
@@ -190,7 +190,7 @@
         if (response.ok) {
             const data = await response.json()
             if (data.statusCode == 200) {
-                alert('お問合せ送信を完了しました。')
+                location.href = "finish.html"
             }　else  {
                 alert('お問合せ送信に失敗しました。')
             }
