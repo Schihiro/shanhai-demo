@@ -94,7 +94,7 @@
 	                    <textarea class="form-control" id="formContent" rows="5"></textarea>
 	                </div>
 	
-	                <button type="submit" class="btn btn-warning" data-i18n="contact.submit"></button>
+	                <button type="submit" class="btn btn-warning" data-i18n="contact.submit" onclick="sendMail()"></button>
 	            </form>
 	</div><!-- .container -->
 </article>
@@ -163,3 +163,41 @@
 <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
+<!-- contact formのjavascriptはここから -->
+<script>
+    async function sendMail() {
+        const name = document.getElementById('formName').value
+        const email = document.getElementById('formEmail1').value
+        const message = document.getElementById('formContent').value
+
+
+        const content = `
+    お名前: ${name}
+    メールアドレス: ${email}
+    お問合せ内容:
+    ${message}
+    `
+        const url = 'https://xefwrs3wld.execute-api.ap-northeast-1.amazonaws.com/v1/send'
+        const response = await fetch(url, {
+            method: "POST",
+            body: JSON.stringify({
+                 to: 'chihiro.credge@gmail.com',
+                //to: '',
+                subject: 'ホームページよりお問合せがありました',
+                content: content
+            })
+        })
+        if (response.ok) {
+            const data = await response.json()
+            if (data.statusCode == 200) {
+                alert('お問合せ送信を完了しました。')
+            }　else  {
+                alert('お問合せ送信に失敗しました。')
+            }
+        } else {
+            alert('お問合せ送信に失敗しました。')
+        }
+
+        console.log(300)
+    }
+</script>
