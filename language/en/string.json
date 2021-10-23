@@ -25,6 +25,12 @@
         "footer-ttl3": "Room 000, Business Building, 8-0-0 Shiba, Minato-ku, Tokyo",
         "footer-ttl4": "Phone：03-1234-5678",
         "footer-ttl5": "FAX：03-1234-5678",
-        "footer-ttl6": "Email：info@example.com"
+        "footer-ttl6": "Email：info@example.com",
+        "contact.finish": "Your inquiry has been sent.",
+        "finish-alert": "Failed to send your inquiry.",
+        "alert1": "※ Please enter your name",
+        "alert2": "※ Please enter your e-mail address",
+        "alert3": "※ Please enter your inquiry",
+        "alert4": "※ Please enter the correct email address"
     }
 }

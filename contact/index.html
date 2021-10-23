@@ -69,18 +69,22 @@
 	            <h2 class="sample-title" data-i18n="contact.form-title"></h2>
 <!--	            <h3 class="sample-subtitle" data-i18n="contact.form-subtitle"></h3>-->
 	            <p class="lead" data-i18n="contact.form-lead"></p>
+                <p style="display: none; color: red;" class="finish-alert" data-i18n="contact.finish-alert"></p>
 	</div>  
 	<div class="container">       
 <!--	            <form class="form1 mt-5">-->
 	                <div class="form-group">
 	                    <label for="formName" data-i18n="contact.formName"></label>
 	                    <input type="text" class="form-control" id="formName">
+                        <div style="display: none; color: red;" class="name-error" data-i18n="contact.alert1"></div>
+
 	                </div>
 	                <div class="form-group">
 	                    <label for="formEmail1" data-i18n="contact.formEmail"></label>
 	                    <input type="email" class="form-control" id="formEmail1">
-<!--	                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
-	                </div>
+                        <div style="display: none; color: red;" class="mail-error" data-i18n="contact.alert2"></div>
+                        <div style="display: none; color: red;" class="mail-alert" data-i18n="contact.alert4"></div>
+                    </div>
 <!--                    <div class="form-group">-->
 <!--	                    <label for="formTel">YOUR PHONE NUMBER</label>-->
 <!--	                    <input type="tel" class="form-control" id="formTel">-->
@@ -92,7 +96,8 @@
 	                <div class="form-group">
 	                    <label for="formContent" data-i18n="contact.formContent"></label>
 	                    <textarea class="form-control" id="formContent" rows="5"></textarea>
-	                </div>
+                        <div style="display: none; color: red;" class="content-error" data-i18n="contact.alert3"></div>
+                    </div>
 	
 	                <button type="submit" class="btn btn-warning" data-i18n="contact.submit" onclick="sendMail()"></button>
 <!--	            </form>-->
@@ -171,6 +176,37 @@
         const message = document.getElementById('formContent').value
 
 
+        if (!email.match(/^([a-z0-9_\.\-])+@([a-z0-9_\.\-])+[^.]$/i)) {
+            $('div.mail-alert').show();
+            return
+        } else if(!name && !email && !message) {
+            $('div.name-error').show();
+            $('div.mail-error').show();
+            $('div.content-error').show();
+            return
+        } else if (!name && !email) {
+            $('div.name-error').show();
+            $('div.mail-error').show();
+            return
+        } else if (!email && !message) {
+            $('div.mail-error').show();
+            $('div.content-error').show();
+            return
+        } else if (!name && !message) {
+            $('div.name-error').show();
+            $('div.content-error').show();
+            return
+        } else if (!name) {
+            $('div.name-error').show();
+            return
+        } else if (!email) {
+            $('div.mail-error').show();
+            return
+        } else if (!message) {
+            $('div.content-error').show();
+            return
+        }
+
         const content = `
     お名前: ${name}
     メールアドレス: ${email}
@@ -190,12 +226,12 @@
         if (response.ok) {
             const data = await response.json()
             if (data.statusCode == 200) {
-                location.href = "finish.html"
+                //location.href = "finish.html?lang={{lng}}"
             }　else  {
-                alert('お問合せ送信に失敗しました。')
+                $('div.finish-alert').show();
             }
         } else {
-            alert('お問合せ送信に失敗しました。')
+            $('div.finish-alert').show();
         }
 
         console.log(300)

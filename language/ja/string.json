@@ -26,6 +26,12 @@
         "footer-ttl3": "東京都港区芝8丁目0-0 ビジネスビル000号室",
         "footer-ttl4": "電話番号：03-1234-5678",
         "footer-ttl5": "FAX：03-1234-5678",
-        "footer-ttl6": "メール：info@example.com"
+        "footer-ttl6": "メール：info@example.com",
+        "contact.finish": "お問い合わせの送信を完了しました。",
+        "finish-alert": "お問い合わせの送信に失敗しました。",
+        "alert1": "※ 名前を入力して下さい",
+        "alert2": "※ メールアドレスを入力して下さい",
+        "alert3": "※ お問い合わせ内容を入力して下さい",
+        "alert4": "※ 正しいメールアドレスを入力して下さい"
     }
 }
