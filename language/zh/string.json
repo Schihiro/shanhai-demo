@@ -26,11 +26,11 @@
         "footer-ttl4": "电话号码：03-1234-5678",
         "footer-ttl5": "传真：03-1234-5678",
         "footer-ttl6": "电子邮件：info@example.com",
-        "contact.finish": "你的询问已发送",
         "finish-alert": "未能发送您的查询",
         "alert1": "※ 请输入你的名字",
         "alert2": "※ 请输入您的电子邮件地址",
         "alert3": "※ 请输入您的查询",
-        "alert4": "※ 请输入正确的电子邮件地址"
+        "alert4": "※ 请输入正确的电子邮件地址",
+        "finish": "你的询问已发送"
     }
 }

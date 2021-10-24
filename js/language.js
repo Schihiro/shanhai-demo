@@ -10,6 +10,7 @@
 
     function setLang(lang) {
         console.log('lang=' + lang);
+        localStorage.setItem('lang', lang);
 
         i18next.use(i18nextXHRBackend).init({
             backend: {

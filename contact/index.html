@@ -38,7 +38,7 @@
         <!-- 他言語化のプルダウン -->
         <div class="">
             <div class="">
-                <select class="form-control lang">
+                <select name="" class="form-control lang">
                     <option value="ja">日本語</option>
                     <option value="en">English</option>
                     <option value="zh">中文</option>
@@ -176,10 +176,7 @@
         const message = document.getElementById('formContent').value
 
 
-        if (!email.match(/^([a-z0-9_\.\-])+@([a-z0-9_\.\-])+[^.]$/i)) {
-            $('div.mail-alert').show();
-            return
-        } else if(!name && !email && !message) {
+        if(!name && !email && !message) {
             $('div.name-error').show();
             $('div.mail-error').show();
             $('div.content-error').show();
@@ -199,11 +196,14 @@
         } else if (!name) {
             $('div.name-error').show();
             return
+        }  else if (!message) {
+            $('div.content-error').show();
+            return
         } else if (!email) {
             $('div.mail-error').show();
             return
-        } else if (!message) {
-            $('div.content-error').show();
+        } else if (!email.match(/^([a-z0-9_\.\-])+@([a-z0-9_\.\-])+[^.]$/i)) {
+            $('div.mail-alert').show();
             return
         }
 
@@ -213,7 +213,7 @@
     お問合せ内容:
     ${message}
     `
-        const url = 'https://xefwrs3wld.execute-api.ap-northeast-1.amazonaws.com/v1/send'
+        let url = 'https://xefwrs3wld.execute-api.ap-northeast-1.amazonaws.com/v1/send'
         const response = await fetch(url, {
             method: "POST",
             body: JSON.stringify({
@@ -223,10 +223,31 @@
                 content: content
             })
         })
+
         if (response.ok) {
             const data = await response.json()
             if (data.statusCode == 200) {
-                //location.href = "finish.html?lang={{lng}}"
+                // $(function() {
+                //                 var arg = new Object;
+                //                 url = location.search.substring(1).split('&');
+                //                 for (i = 0; url[i]; i++) {
+                //                     var k = url[i].split('=');
+                //                     arg[k[0]] = k[1];
+                //                 }
+                //                 var id = arg.lang;
+                //
+                //                 var lang = {
+                //                     '01':'ja',
+                //                     '02':'en',
+                //                     '03':'zh',
+                //                 }
+                //
+                //                 var lang_id = lang[id];
+                //
+                //                 $(".lang").val(lang_id);
+                //         });
+
+                location.href = "finish.html"
             }　else  {
                 $('div.finish-alert').show();
             }
