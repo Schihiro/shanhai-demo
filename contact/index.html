@@ -213,12 +213,14 @@
     お問合せ内容:
     ${message}
     `
-        let url = 'https://xefwrs3wld.execute-api.ap-northeast-1.amazonaws.com/v1/send'
+        let url = 'https://gdut848ipk.execute-api.ap-northeast-1.amazonaws.com/v3/send'
         const response = await fetch(url, {
             method: "POST",
             body: JSON.stringify({
+                fromnae: 'Realtimesystem',
+                from: email,
                  to: 'chihiro.credge@gmail.com',
-                //to: '',
+                //to: 'info@realtimesys.jp',
                 subject: 'ホームページよりお問合せがありました',
                 content: content
             })
