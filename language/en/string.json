@@ -16,6 +16,7 @@
         "page-ttl": "Inquiry",
         "form-title": "Inquiry Form",
         "form-lead": "If you have any further requests or questions, please fill in the necessary information and feel free to contact us.",
+        "form-lead2": "Please check the input contents.",
         "formName": "Name",
         "formEmail": "Email address",
         "formContent": "Contents",
@@ -31,6 +32,8 @@
         "alert2": "※ Please enter your e-mail address",
         "alert3": "※ Please enter your inquiry",
         "alert4": "※ Please enter the correct email address",
+        "check": "Check",
+        "back": "Back",
         "finish": "Your inquiry has been sent."
     }
 }

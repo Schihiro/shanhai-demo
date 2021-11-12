@@ -99,7 +99,7 @@
                         <div style="display: none; color: red;" class="content-error" data-i18n="contact.alert3"></div>
                     </div>
 	
-	                <button type="submit" class="btn btn-warning" data-i18n="contact.submit" onclick="sendMail()"></button>
+	                <button type="submit" class="btn btn-warning" data-i18n="contact.check" onclick="checkContent()"></button>
 <!--	            </form>-->
 	</div><!-- .container -->
 </article>
@@ -170,7 +170,7 @@
 </html>
 <!-- contact formのjavascriptはここから -->
 <script>
-    async function sendMail() {
+    async function checkContent() {
         const name = document.getElementById('formName').value
         const email = document.getElementById('formEmail1').value
         const message = document.getElementById('formContent').value
@@ -206,57 +206,20 @@
             $('div.mail-alert').show();
             return
         }
+            location.href = "check.html"
 
-        const content = `
-    お名前: ${name}
-    メールアドレス: ${email}
-    お問合せ内容:
-    ${message}
-    `
-        let url = 'https://gdut848ipk.execute-api.ap-northeast-1.amazonaws.com/v3/send'
-        const response = await fetch(url, {
-            method: "POST",
-            body: JSON.stringify({
-                fromnae: 'Realtimesystem',
-                from: email,
-                 to: 'chihiro.credge@gmail.com',
-                //to: 'info@realtimesys.jp',
-                subject: 'ホームページよりお問合せがありました',
-                content: content
-            })
-        })
-
-        if (response.ok) {
-            const data = await response.json()
-            if (data.statusCode == 200) {
-                // $(function() {
-                //                 var arg = new Object;
-                //                 url = location.search.substring(1).split('&');
-                //                 for (i = 0; url[i]; i++) {
-                //                     var k = url[i].split('=');
-                //                     arg[k[0]] = k[1];
-                //                 }
-                //                 var id = arg.lang;
-                //
-                //                 var lang = {
-                //                     '01':'ja',
-                //                     '02':'en',
-                //                     '03':'zh',
-                //                 }
-                //
-                //                 var lang_id = lang[id];
-                //
-                //                 $(".lang").val(lang_id);
-                //         });
-
-                location.href = "finish.html"
-            }　else  {
-                $('div.finish-alert').show();
-            }
-        } else {
-            $('div.finish-alert').show();
-        }
-
-        console.log(300)
+        //  if (response.ok) {
+        //      const data = await response.json()
+        //      if (data.statusCode == 200) {
+        //
+        //          location.href = "check.html"
+        //      }　//else  {
+        // //         $('div.finish-alert').show();
+        // //     }
+        // // } else {
+        // //     $('div.finish-alert').show();
+        //  }
+        //
+        //  console.log(300)
     }
 </script>
