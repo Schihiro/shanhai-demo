@@ -206,6 +206,11 @@
             $('div.mail-alert').show();
             return
         }
+
+            localStorage.setItem('name', name);
+            localStorage.setItem('email', email);
+            localStorage.setItem('message', message);
+
             location.href = "check.html"
 
         //  if (response.ok) {
