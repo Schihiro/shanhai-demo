@@ -75,11 +75,11 @@
       <!--	            <form class="form1 mt-5">-->
       <div class="form-group">
         <label data-i18n="contact.formName"></label>
-        <label type="text" class="form-control"><script>localStorage.getItem('name')</script></label>
+        <label><span id="name"></span></label>
       </div>
       <div class="form-group">
-        <label for="formEmail1" data-i18n="contact.formEmail"></label>
-        <input type="email" class="form-control" id="formEmail1">
+        <label data-i18n="contact.formEmail"></label>
+        <label><span id="email"></span></label>
       </div>
       <!--                    <div class="form-group">-->
       <!--	                    <label for="formTel">YOUR PHONE NUMBER</label>-->
@@ -90,8 +90,8 @@
       <!--	                    <input type="text" class="form-control" id="formSubject">-->
       <!--	                </div>-->
       <div class="form-group">
-        <label for="formContent" data-i18n="contact.formContent"></label>
-        <textarea class="form-control" id="formContent" rows="5"></textarea>
+        <label data-i18n="contact.formContent"></label>
+        <label><span id="message"></span></label>
       </div>
 
       <a href="index.html"><input type="button" class="btn btn-warning" data-i18n="[value]contact.back"></a>
@@ -166,10 +166,15 @@
 </html>
 <!-- contact formのjavascriptはここから -->
 <script>
+  const name = localStorage.getItem('name')
+  $('#name').text(name)
+  const email = localStorage.getItem('email')
+  $('#email').text(email)
+  const message = localStorage.getItem('message')
+  $('#message').text(message)
+
+
   async function sendMail() {
-    const name = document.getElementById('formName').value
-    const email = document.getElementById('formEmail1').value
-    const message = document.getElementById('formContent').value
 
     const content = `
     お名前: ${name}
@@ -182,7 +187,6 @@
       method: "POST",
       body: JSON.stringify({
         fromname: 'Realtime system',
-        from: email,
         to: 'chihiro.credge@gmail.com',
         //to: 'info@realtimesys.jp',
         subject: 'ホームページよりお問合せがありました',
