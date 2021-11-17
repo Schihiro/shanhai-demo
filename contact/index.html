@@ -80,8 +80,8 @@
 
 	                </div>
 	                <div class="form-group">
-	                    <label for="formEmail1" data-i18n="contact.formEmail"></label>
-	                    <input type="email" class="form-control" id="formEmail1">
+	                    <label for="formEmail" data-i18n="contact.formEmail"></label>
+	                    <input type="email" class="form-control" id="formEmail">
                         <div style="display: none; color: red;" class="mail-error" data-i18n="contact.alert2"></div>
                         <div style="display: none; color: red;" class="mail-alert" data-i18n="contact.alert4"></div>
                     </div>
@@ -170,9 +170,16 @@
 </html>
 <!-- contact formのjavascriptはここから -->
 <script>
+    // const previous = window.history.previous
+    // if (previous === 'check.html') {
+    //     $('#formName').val(localStorage.getItem('name'));
+    //     $('#formEmail').val(localStorage.getItem('email'));
+    //     $('#formContent').val(localStorage.getItem('message'));
+    // }
+
     async function checkContent() {
         const name = document.getElementById('formName').value
-        const email = document.getElementById('formEmail1').value
+        const email = document.getElementById('formEmail').value
         const message = document.getElementById('formContent').value
 
 
