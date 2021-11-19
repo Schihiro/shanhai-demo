@@ -177,6 +177,15 @@
     //     $('#formContent').val(localStorage.getItem('message'));
     // }
 
+    const checkFlag = localStorage.getItem('checkFlag')
+    if (checkFlag === '1' ) {
+        $('#formName').val(localStorage.getItem('name'));
+        $('#formEmail').val(localStorage.getItem('email'));
+        $('#formContent').val(localStorage.getItem('message'));
+
+        localStorage.removeItem("checkFlag");
+    }
+
     async function checkContent() {
         const name = document.getElementById('formName').value
         const email = document.getElementById('formEmail').value
