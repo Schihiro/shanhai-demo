@@ -13,7 +13,7 @@ main .btn{
 }
 h1 { font-size: 4.5rem; }
 h2, h3{
-   color: #401f0f;
+   color: #1f2e37;
 }
 .gray {
     color: #6c757d;
@@ -30,8 +30,8 @@ h2, h3{
 
 /* ヘッダー(navbar) */
 .navbar{
-    border-bottom: 1px solid #a29080;
-    background-color: #401f0f;
+    border-bottom: 1px solid #66869a;
+    background-color: #003657;
 }
 .navbar .navbar-collapse{
     flex-grow: 0;
@@ -61,10 +61,11 @@ h2, h3{
 
 /* フッター */
 #footer{
-    background-color: #563322;
+    border-bottom: 1px solid #66869a;
+    background-color: #003657;
 }
 #footer .container{
-    color: #e0c7b2;
+    color: #ccd7dd;
 }
 #footer .footer-ttl{
     font-size: 1rem;
@@ -88,10 +89,10 @@ h2, h3{
     margin-right: 0.5rem;
 }
 #footer #copyright{
-    border-top: 1px solid #774831;
-    background-color: #401f0f;
-    color: #e0c7b2;
+    background-color: #003657;
+    color: #ccd7dd;
 }
+
 #footer img {
 	width: 360px;
 }
@@ -114,7 +115,7 @@ h1{
     height: 640px;
     background-color: #f1efff;
     border-bottom: #dddddd;
-    background: url("../img/top-main.jpg") no-repeat center center;
+    background: url("../img/TOP③.jpg") no-repeat center center;
     background-size:cover;
 }
 #page-top .jumbotron-fluid .container{
@@ -131,12 +132,12 @@ h1{
 
 /* 各セクション */
 #page-top section{
-    border-bottom: 1px solid #e0c7b2;
-    background-color: #fbfbf2;
+    border-bottom: 1px solid #ccd7dd;
+    background-color: #fff;
 	padding: 5rem 0;
 }
 #page-top section:nth-child(odd){
-    background-color: #e0c7b2;
+    background-color: #ccd7dd;
 }
 #page-top section .container > h2{
     margin-bottom: 30px;
