@@ -34,7 +34,8 @@ h2, h3{
     background-color: #003657;
 }
 .navbar .navbar-collapse{
-    flex-grow: 0;
+/*    flex-grow: 0;*/
+    margin-right: 72px;
 }
 .navbar .navbar-brand{
     height: 50px;
@@ -45,6 +46,10 @@ h2, h3{
 
 .nav-item{
     width: 80px;
+}
+
+.nav-link {
+    width: 112px;
 }
 
 .navbar .navbar-nav .active > .nav-link{
@@ -71,7 +76,7 @@ h2, h3{
     font-size: 1rem;
     font-weight: bold;
     margin: 1.5rem 0;
-    color: #ffce11;
+    color: #ccd7dd;
 }
 #footer address p,
 #footer #footer-news li{
@@ -101,14 +106,15 @@ h2, h3{
 /* メイン画像 */
 h1{
     font-weight: bold !important;
-    color: #ffce11;
+    color: #ccd7dd;
 }
 #page-top h1 + span {
     font-size: 3rem;
     font-weight: bold;
-    color: #ffffff;
+    color: #ccd7dd;
     line-height: 110%;
     margin-top: 0.2rem;
+    margin-left: 10px;
     display: block;
 }
 #page-top .jumbotron-fluid{
@@ -122,12 +128,24 @@ h1{
     height: 100%;
 }
 #page-top .jumbotron-fluid .btn{
-    padding-left: 3rem;
-    padding-right: 3rem;
-    margin-top: 1.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-top: 4.5rem;
     font-weight: bold;
-	border-width: 3px;
-    border-color: #fff;
+	border-width: 2px;
+    border-color: #1f2e37;
+}
+
+.btn-outline-warning {
+    color: #1f2e37;
+    background-color: #ccd7dd;
+    border: solid 2px #1f2e37;
+}
+
+.btn-outline-warning:hover {
+    background-color: #1f2e37;
+    border: solid 2px #1f2e37;
+    color: #ccd7dd;
 }
 
 /* 各セクション */
@@ -140,7 +158,7 @@ h1{
     background-color: #ccd7dd;
 }
 #page-top section .container > h2{
-    margin-bottom: 30px;
+    margin-bottom: 64px;
     font-size: 2.5rem;
 }
 #page-top section .container > h2 + p{
@@ -151,6 +169,7 @@ h1{
     font-size: 1.4rem;
 }
 
+/* 会社概要 */
 #sec2 {
     line-height: 180%;
 }
@@ -158,6 +177,43 @@ h1{
     min-height: 160px;
     color: #2f2f2f;
 }
+
+#sec2 .lead {
+    font-size: 16px;
+}
+
+.outline_btn {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.btn-border {
+    display: inline-block;
+    width: 240px;
+    text-align: center;
+    border: 2px solid #003657;
+    font-size: 16px;
+    color: #003657;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 16px 56px;
+    transition: .4s;
+}
+
+.btn-border:hover {
+    background-color: #003657;
+    border-color: #003657;
+    color: #ccd7dd;
+    text-decoration: none;
+}
+
+.text-body {
+    text-align: left !important;
+    font-size: 16px;
+    line-height: 32px;
+    padding: 0px 8px;
+}
+
 #sec4 .card-body .clearfix p,
 #sec4 .card-body .clearfix h3{
     margin-left: 115px;
@@ -182,6 +238,7 @@ h1{
 	padding: 1rem 0;
 }
 
+/* ニュース */
 #sec5 article > .row {
     border: 1px solid #dddddd;
 }
@@ -197,6 +254,11 @@ h1{
 #sec5 article > div div header {
 	padding: 10px;
 }
+
+#sec5 ul { width: 720px; display: block; margin: 0 auto; }
+#sec5 li { width: 720px; border-bottom: solid 1px #ccd7dd; list-style: none; padding: 16px 0;}
+.news-title { margin-left: 24px; }
+
 
 /* *****下層ページ***** */
 
@@ -307,4 +369,8 @@ h1.page-ttl {
 }
 .form1 .form-group{
     margin-bottom: 2rem;
+}
+
+.service_title {
+    margin: 32px 12px;
 }
