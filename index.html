@@ -19,20 +19,23 @@
 <meta name="twitter:site" content="@ユーザー名">
 <link rel="canonical" href="あなたのサイトURL">
 <!--<link rel="icon" type="image/png" href="ファビコンのパス">-->
-<!-- スタイルシートはここから -->	
+<!-- スタイルシートはここから -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/queries.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
 <!-- 多言語化に関する読み込み -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
     <script type="text/javascript" src="lib/jquery/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="lib/i18next/i18next.min.js"></script>
     <script type="text/javascript" src="lib/jquery-i18next/jquery-i18next.min.js"></script>
     <script type="text/javascript" src="lib/i18next-xhr-backend/i18nextXHRBackend.min.js"></script>
     <script type="text/javascript" src="js/language.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="js/jquery.bgswitcher.js"></script>
 </head>
 <body id="page-top">
 <!------------------------------------------------------------------------------------------------------------------>
@@ -75,83 +78,14 @@
     </div>
     </div>
 </div>
+    <ul class="slick01">
+        <li><img alt="画像1" src="img/satellite.jpg" /></li>
+        <li><img alt="画像2" src="img/top_amazon_1.jpg" /></li>
+        <li><img alt="画像3" src="img/container.jpg" /></li>
+    </ul>
     <script>
-        jQuery(function($) {
-            $('.bg-slider').bgSwitcher({
-                images: ['TOP.jpg','TOP.jpg','TOP.jpg'], // 切り替える背景画像を指定
-            });
-        });
+        $('.slick01').slick();
     </script>
-    <div class="bg-slider">
-        <h1 class="bg-slider__title">BGSWITCHER DEMO PAGE</h1>
-    </div>
-<!------------------------------------------------------------------------------------------------------------------>
-<!--<section id="sec1">-->
-<!--    <div class="container">-->
-
-<!--        <h2 class="text-center">WORK</h2>-->
-<!--        <p class="lead text-center font-weight-normal">-->
-<!--        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.-->
-<!--        </p>-->
-<!--        -->
-<!--       <div class="row">-->
-<!--            <div class="col-lg-4 col-sm-6 mb-5">-->
-<!--                <div class="card">-->
-<!--                    <img class="card-img-top" src="img/work-image.jpg" alt="画像1">-->
-<!--                    <div class="card-body">-->
-<!--                      <h3 class="card-title">WORK TITLE</h3>-->
-<!--                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4 col-sm-6 mb-5">-->
-<!--                <div class="card">-->
-<!--                    <img class="card-img-top" src="img/work-image.jpg" alt="画像2">-->
-<!--                    <div class="card-body">-->
-<!--                      <h3 class="card-title">WORK TITLE</h3>-->
-<!--                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4 col-sm-6 mb-5">-->
-<!--                <div class="card">-->
-<!--                    <img class="card-img-top" src="img/work-image.jpg" alt="画像3">-->
-<!--                    <div class="card-body">-->
-<!--                      <h3 class="card-title">WORK TITLE</h3>-->
-<!--                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4 col-sm-6 mb-5">-->
-<!--                <div class="card">-->
-<!--                    <img class="card-img-top" src="img/work-image.jpg" alt="画像4">-->
-<!--                    <div class="card-body">-->
-<!--                      <h3 class="card-title">WORK TITLE</h3>-->
-<!--                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4 col-sm-6 mb-5">-->
-<!--                <div class="card">-->
-<!--                    <img class="card-img-top" src="img/work-image.jpg" alt="画像5">-->
-<!--                    <div class="card-body">-->
-<!--                      <h3 class="card-title">WORK TITLE</h3>-->
-<!--                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4 col-sm-6 mb-5">-->
-<!--                <div class="card">-->
-<!--                    <img class="card-img-top" src="img/work-image.jpg" alt="画像6">-->
-<!--                    <div class="card-body">-->
-<!--                      <h3 class="card-title">WORK TITLE</h3>-->
-<!--                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>&lt;!&ndash; .row &ndash;&gt;-->
-<!--    </div>&lt;!&ndash; .container &ndash;&gt;-->
-<!--</section>-->
 <!------------------------------------------------------------------------------------------------------------------>
 <section id="sec2">
     <div class="container">
@@ -201,129 +135,7 @@
         </div>
     </div><!-- .container -->    
 </section>
-    
-<!------------------------------------------------------------------------------------------------------------------>
-<!--<section id="sec4">-->
-<!--    <div class="container">-->
-<!--        <h2 class="text-center">STAFF</h2>-->
-<!--        <p class="lead text-center font-weight-normal">-->
-<!--        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.-->
-<!--        </p>-->
-<!--        <div class="row">-->
-<!--            <div class="col-lg-4 col-sm-6 mb-5">-->
-<!--                <div class="card">-->
-<!--                    <div class="card-body">-->
-<!--						<div class="row">-->
-<!--							<div class="col-lg-5 col-sm-12 mb-2">-->
-<!--                            <img src="img/staff-image1.png" alt="人物写真1" class="rounded-circle">-->
-<!--                            </div>-->
-<!--							<div class="col-lg-7 col-sm-12 mb-2 px-lg-0 px-md-2">	-->
-<!--                                <p class="card-title">ウェブディレクター</p>-->
-<!--                                <p class="card-subtitle">Web Director</p>-->
-<!--                                <h3 class="card-title">植⽥   崇 </h3>-->
-<!--                                <p class="card-subtitle">TAKASHI UEDA</p>-->
-<!--                            </div>-->
-<!--						</div>	-->
-<!--                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--			<div class="col-lg-4 col-sm-6 mb-5">-->
-<!--                <div class="card">-->
-<!--                    <div class="card-body">-->
-<!--						<div class="row">-->
-<!--							<div class="col-lg-5 col-sm-12 mb-2">-->
-<!--                            <img src="img/staff-image2.png" alt="人物写真2" class="rounded-circle">-->
-<!--                            </div>-->
-<!--							<div class="col-lg-7 col-sm-12 mb-2 px-lg-0 px-md-2">	-->
-<!--                                <p class="card-title">ウェブディレクター</p>-->
-<!--                                <p class="card-subtitle">Web Director</p>-->
-<!--                                <h3 class="card-title">植⽥   崇 </h3>-->
-<!--                                <p class="card-subtitle">TAKASHI UEDA</p>-->
-<!--                            </div>-->
-<!--						</div>	-->
-<!--                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--			<div class="col-lg-4 col-sm-6 mb-5">-->
-<!--                <div class="card">-->
-<!--                    <div class="card-body">-->
-<!--						<div class="row">-->
-<!--							<div class="col-lg-5 col-sm-12 mb-2">-->
-<!--                            <img src="img/staff-image3.png" alt="人物写真3" class="rounded-circle">-->
-<!--                            </div>-->
-<!--							<div class="col-lg-7 col-sm-12 mb-2 px-lg-0 px-md-2">	-->
-<!--                                <p class="card-title">ウェブディレクター</p>-->
-<!--                                <p class="card-subtitle">Web Director</p>-->
-<!--                                <h3 class="card-title">植⽥   崇 </h3>-->
-<!--                                <p class="card-subtitle">TAKASHI UEDA</p>-->
-<!--                            </div>-->
-<!--						</div>	-->
-<!--                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--			<div class="col-lg-4 col-sm-6 mb-5">-->
-<!--                <div class="card">-->
-<!--                    <div class="card-body">-->
-<!--						<div class="row">-->
-<!--							<div class="col-lg-5 col-sm-12 mb-2">-->
-<!--                            <img src="img/staff-image1.png" alt="人物写真4" class="rounded-circle">-->
-<!--                            </div>-->
-<!--							<div class="col-lg-7 col-sm-12 mb-2 px-lg-0 px-md-2">	-->
-<!--                                <p class="card-title">ウェブディレクター</p>-->
-<!--                                <p class="card-subtitle">Web Director</p>-->
-<!--                                <h3 class="card-title">植⽥   崇 </h3>-->
-<!--                                <p class="card-subtitle">TAKASHI UEDA</p>-->
-<!--                            </div>-->
-<!--						</div>	-->
-<!--                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--			<div class="col-lg-4 col-sm-6 mb-5">-->
-<!--                <div class="card">-->
-<!--                    <div class="card-body">-->
-<!--						<div class="row">-->
-<!--							<div class="col-lg-5 col-sm-12 mb-2">-->
-<!--                            <img src="img/staff-image2.png" alt="人物写真5" class="rounded-circle">-->
-<!--                            </div>-->
-<!--							<div class="col-lg-7 col-sm-12 mb-2 px-lg-0 px-md-2">	-->
-<!--                                <p class="card-title">ウェブディレクター</p>-->
-<!--                                <p class="card-subtitle">Web Director</p>-->
-<!--                                <h3 class="card-title">植⽥   崇 </h3>-->
-<!--                                <p class="card-subtitle">TAKASHI UEDA</p>-->
-<!--                            </div>-->
-<!--						</div>	-->
-<!--                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--			<div class="col-lg-4 col-sm-6 mb-5">-->
-<!--                <div class="card">-->
-<!--                    <div class="card-body">-->
-<!--						<div class="row">-->
-<!--							<div class="col-lg-5 col-sm-12 mb-2">-->
-<!--                            <img src="img/staff-image3.png" alt="人物写真6" class="rounded-circle">-->
-<!--                            </div>-->
-<!--							<div class="col-lg-7 col-sm-12 mb-2 px-lg-0 px-md-2">	-->
-<!--                                <p class="card-title">ウェブディレクター</p>-->
-<!--                                <p class="card-subtitle">Web Director</p>-->
-<!--                                <h3 class="card-title">植⽥   崇 </h3>-->
-<!--                                <p class="card-subtitle">TAKASHI UEDA</p>-->
-<!--                            </div>-->
-<!--						</div>	-->
-<!--                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>&lt;!&ndash; .row &ndash;&gt;-->
-<!--		-->
-<!--		<a class="btn btn-lg btn-block mx-auto text-white btn-outline-warning" href="sample/index.html" role="button">スタッフの採用情報はこちら</a>-->
-<!--		-->
-<!--	</div>&lt;!&ndash; .container &ndash;&gt;-->
-<!--</section>-->
+
 <!------------------------------------------------------------------------------------------------------------------>
 <section id="sec5">
     <div class="container">
@@ -372,12 +184,16 @@
     </div>
 </footer>
 <!------------------------------------------------------------------------------------------------------------------>
-
 <!-- javascript はここから -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/script.js"></script>
+<script type="text/javascript" src="js/language.js"></script>
+
+<script type="text/javascript" src="lib/jquery/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="lib/i18next/i18next.min.js"></script>
+<script type="text/javascript" src="lib/jquery-i18next/jquery-i18next.min.js"></script>
+<script type="text/javascript" src="lib/i18next-xhr-backend/i18nextXHRBackend.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 </body>
 </html>
