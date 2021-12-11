@@ -121,9 +121,28 @@ h1{
     height: 640px;
     background-color: #f1efff;
     border-bottom: #dddddd;
-    background: url("../img/TOP③.jpg") no-repeat center center;
+    background: url("../images/TOP③.jpg") no-repeat center center;
     background-size:cover;
 }
+
+.bg-slider {
+    width: 100vw;
+    height: 100vh;
+    background-position:center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg-slider__title{
+    color: #fff;
+    font-size: 48px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align:center;
+    text-shadow: 1px 1px 1px #000;
+}
+
 #page-top .jumbotron-fluid .container{
     height: 100%;
 }
@@ -374,3 +393,11 @@ h1.page-ttl {
 .service_title {
     margin: 32px 12px;
 }
+
+/* *****会社概要ページ***** */
+.page-title{ padding: 3rem 0 !important; }
+.about-title { margin-top: 20px; }
+table { width: 800px; display: block; margin: 0 auto; }
+th { padding: 30px; text-align: center; }
+td { width: 640px; padding: 30px; border-bottom: solid 1px #1f2e37; }
+.company__overview__map { margin-top: 24px; }
