@@ -106,32 +106,43 @@ h2, h3{
 /* メイン画像 */
 h1{
     font-weight: bold !important;
-    color: #ccd7dd;
+    color: #fff;
+    text-shadow: 3px 3px #1f2e37;
 }
 #page-top h1 + span {
     font-size: 3rem;
     font-weight: bold;
-    color: #ccd7dd;
+    color: #fff;
+    text-shadow: 3px 3px #1f2e37;
     line-height: 110%;
     margin-top: 0.2rem;
     margin-left: 10px;
     display: block;
 }
-#page-top .jumbotron-fluid{
-    height: 640px;
-    background-color: #f1efff;
-    border-bottom: #dddddd;
-    background: url("../img/TOP③.jpg") no-repeat center center;
-    background-size:cover;
+
+.slick-slide img {
+    width: 100%;
+    height: 640px; /* ポイント1 */
+    opacity: 75%;
 }
 
-#page-top .jumbotron-fluid .container{
-    height: 100%;
+.slick-slider {
+    padding: 0;
+    height: 640px;
+    width: 100%;
+    margin-bottom: 0 !important;
 }
+
+.topimg-text {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+
 #page-top .jumbotron-fluid .btn{
     padding-left: 4rem;
     padding-right: 4rem;
-    margin-top: 4.5rem;
+    margin-top: 4rem;
     font-weight: bold;
 	border-width: 2px;
     border-color: #1f2e37;
@@ -139,8 +150,10 @@ h1{
 
 .btn-outline-warning {
     color: #1f2e37;
-    background-color: #ccd7dd;
+    background-color: #fff;
     border: solid 2px #1f2e37;
+    margin-top: 32px !important;
+    margin-left: 24px;
 }
 
 .btn-outline-warning:hover {
@@ -152,12 +165,10 @@ h1{
 /* 各セクション */
 #page-top section{
     border-bottom: 1px solid #ccd7dd;
-    background-color: #fff;
+    /*background-color: #fff;*/
 	padding: 5rem 0;
 }
-#page-top section:nth-child(odd){
-    background-color: #ccd7dd;
-}
+
 #page-top section .container > h2{
     margin-bottom: 64px;
     font-size: 2.5rem;
@@ -173,6 +184,7 @@ h1{
 /* 会社概要 */
 #sec2 {
     line-height: 180%;
+    background-color: #fff;
 }
 #sec2 .row{
     min-height: 160px;
@@ -215,6 +227,10 @@ h1{
     padding: 0px 8px;
 }
 
+#sec3 {
+    background-color: #ccd7dd;
+}
+
 #sec4 .card-body .clearfix p,
 #sec4 .card-body .clearfix h3{
     margin-left: 115px;
@@ -237,6 +253,10 @@ h1{
 	background-color: #401f0f;
 	border: none;
 	padding: 1rem 0;
+}
+
+#sec5 {
+    background-color: #fff;
 }
 
 /* ニュース */
@@ -377,7 +397,8 @@ h1.page-ttl {
 }
 
 /* *****会社概要ページ***** */
-.page-title{ padding: 3rem 0 !important; }
+#about { background-color: #fff; }
+.page-title{ padding: 3rem 0 !important; background-color: #cddce7; }
 .about-title { margin-top: 20px; }
 table { width: 800px; display: block; margin: 0 auto; }
 th { padding: 30px; text-align: center; }

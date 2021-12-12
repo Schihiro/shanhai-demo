@@ -27,15 +27,14 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
 <!-- 多言語化に関する読み込み -->
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+<!--    <script src="js/bootstrap.min.js"></script>-->
     <script type="text/javascript" src="lib/jquery/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="lib/i18next/i18next.min.js"></script>
     <script type="text/javascript" src="lib/jquery-i18next/jquery-i18next.min.js"></script>
     <script type="text/javascript" src="lib/i18next-xhr-backend/i18nextXHRBackend.min.js"></script>
     <script type="text/javascript" src="js/language.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
 </head>
 <body id="page-top">
 <!------------------------------------------------------------------------------------------------------------------>
@@ -69,22 +68,32 @@
 </header>
 <main>
 <!------------------------------------------------------------------------------------------------------------------>
-<div class="jumbotron-fluid mb-0">
-    <div class="container d-flex align-items-center">
-    <div>
-        <h1 class="mb-0" data-i18n="label.label1"></h1>
-        <span data-i18n="label.label2"></span>
-        <a href="contact/index.html" class="btn btn-outline-warning btn-lg rounded-0" data-i18n="label.label3"></a>
-    </div>
-    </div>
-</div>
-    <ul class="slick01">
-        <li><img alt="画像1" src="img/satellite.jpg" /></li>
-        <li><img alt="画像2" src="img/top_amazon_1.jpg" /></li>
-        <li><img alt="画像3" src="img/container.jpg" /></li>
-    </ul>
+<!--<div class="jumbotron-fluid mb-0">-->
+<!--    <div class="container d-flex align-items-center">-->
+        <ul class="slick01 slick-slider">
+            <li class="slick-slide slick-current slick-active" data-slick-index="1" aria-hidden="false" tabindex="0" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01"><img alt="画像1" src="img/satellite.jpg" /></li>
+            <li class="slick-slide slick-current slick-active" data-slick-index="1" aria-hidden="false" tabindex="0" role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control01"><img alt="画像2" src="img/top_amazon_1.jpg" /></li>
+            <li class="slick-slide slick-current slick-active" data-slick-index="1" aria-hidden="false" tabindex="0" role="tabpanel" id="slick-slide03" aria-describedby="slick-slide-control01"><img alt="画像3" src="img/container.jpg" /></li>
+        </ul>
+        <div class="topimg-text">
+            <h1 class="mb-0" data-i18n="label.label1"></h1>
+            <span data-i18n="label.label2"></span>
+            <a href="contact/index.html" class="btn btn-outline-warning btn-lg rounded-0" data-i18n="label.label3"></a>
+        </div>
+<!--    </div>-->
+<!--</div>-->
+
     <script>
-        $('.slick01').slick();
+        $(function() {
+            $('.slick01').slick({
+                autoplay: true, //「オプション名: 値」の形式で書く
+                adaptiveHeight: true,
+                arrows: false,
+                // prevArrow: '<img src="img/arrow_left.png" class="slide-arrow prev-arrow">',
+                // nextArrow: '<img src="img/arrow_right.png" class="slide-arrow next-arrow">',
+                slidesToShow: 1, //表示するスライド数
+            });
+        })
     </script>
 <!------------------------------------------------------------------------------------------------------------------>
 <section id="sec2">
