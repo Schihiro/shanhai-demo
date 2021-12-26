@@ -1,6 +1,6 @@
 (function () {
     $(function () {
-        if(localStorage.getItem('lang') === '') {
+        if(!localStorage.getItem('lang')) {
             setLang('ja');
         } else {
             setLang(localStorage.getItem('lang')); // ここにif文で、strageがあればそれを使うなければデフォルトのjaにする
@@ -22,7 +22,7 @@ function setLang(lang) {
 
     i18next.use(i18nextXHRBackend).init({
         backend: {
-            loadPath: '../language/{{lng}}/string.json'
+            loadPath: '/web-demo/language/{{lng}}/string.json'
         },
         debug: false,
         defaultLng: 'ja',
