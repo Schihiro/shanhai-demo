@@ -4,12 +4,12 @@
 @media screen and (min-width: 1200px) {
     
 #footer #footer-contents > div{
-    border-left: 1px solid #774831;
-    border-right: 1px solid #774831;
+    /*border-left: 1px solid #774831;*/
+    /*border-right: 1px solid #774831;*/
     border-collaps: collapse;
 }
 #footer #footer-contents > div:last-child{
-    border-right: 1px solid #774831;
+    /*border-right: 1px solid #774831;*/
 }
 #footer img {
 width: 100%;
@@ -34,7 +34,7 @@ width: 100%;
 ==============================================*/
 @media screen and (max-width:991.98px) {
 #footer #footer-contents > div{
-    border-bottom: 1px solid #774831;
+    /*border-bottom: 1px solid #774831;*/
     border-left: none;
     border-right: none;
     padding-bottom: 1rem;

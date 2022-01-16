@@ -11,16 +11,15 @@ h2, h3{ color: #1f2e37; }
 .img-thumbnail { width: 100%; padding: .25rem; background-color: transparent; border: none; }
 
 /* ヘッダー(navbar) */
-.navbar{ border-bottom: 1px solid #66869a; background-color: #003657; }
+.navbar{ border-bottom: 2px solid #ef7c11; background-color: #003657; }
 .navbar .navbar-collapse{ /*    flex-grow: 0;*/ margin-right: 72px; }
 .navbar .navbar-brand{ height: 50px; }
 .navbar .navbar-brand img{ width: 112px; height: 112px; margin-top: -42px; }
-.nav-item{ width: 80px; }
-.nav-link { width: 112px; }
-.navbar .navbar-nav .active > .nav-link{ color: #ffce11; }
-.navbar .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link:focus { color: rgba(251,251,241,1); }
+.nav-item{ width: 96px; }
+.nav-link { width: 112px; text-align: center; }
 .navbar-nav{ margin-left: 560px; }
+.nav-item a{ color: #DFF2FC !important; font-weight: 600; }
+.nav-item a:hover{ color: rgba(251,251,241,0.5) !important; }
 
 /* フッター */
 #footer{ border-bottom: 1px solid #66869a; background-color: #003657; }
@@ -33,6 +32,11 @@ h2, h3{ color: #1f2e37; }
 #footer #footer-news li span{ display: inline-block; margin-right: 0.5rem; }
 #footer #copyright{ background-color: #003657; color: #ccd7dd; }
 #footer img { width: 360px; }
+#footer .btn-outline-warning{ font-weight: bold; color: #ffffff; background-color: #ef7c11;
+    border: solid 1px #ef7c11; margin-top: -80px !important;     margin-left: -80px !important;
+    text-shadow: none; }
+#footer .btn-outline-warning:hover{ background-color: #ffffff; border: solid 2px #ef7c11;
+    color: #ef7c11; text-shadow: none; }
 
 /* *****トップページ***** */
 /* メイン画像 */
@@ -48,10 +52,10 @@ h1{ font-weight: bold !important; color: #fff; text-shadow: 3px 3px #1f2e37;
 .btn-outline-warning { position: absolute; top: 180px }
 #page-top .jumbotron-fluid .btn{ padding-left: 4rem; padding-right: 4rem;
     margin-top: 4rem; font-weight: bold; border-width: 2px; border-color: #1f2e37; }
-.btn-outline-warning { font-weight: bold; color: #1f2e37; background-color: rgba(255, 255, 255, 0.2);
-    border: solid 1px #1f2e37; margin-top: 32px !important; margin-left: 24px; }
-.btn-outline-warning:hover { background-color: #1f2e37; border: solid 2px #1f2e37;
-    color: #ccd7dd; }
+.btn-outline-warning { font-weight: bold; color: #ef7c11; background-color: rgba(255, 255, 255, 0.2);
+    border: solid 3px #ef7c11; margin-top: 32px !important; margin-left: 24px; text-shadow: 0.5px 0.5px #ffffff }
+.btn-outline-warning:hover { background-color: #ef7c11; border: solid 2px #ef7c11;
+    color: #ffffff; text-shadow: none; }
 
 /* 各セクション */
 #page-top section{ border-bottom: 1px solid #ccd7dd;
@@ -145,15 +149,16 @@ td { width: 640px; padding: 30px; border-bottom: solid 1px #1f2e37; }
 iframe { width: 600px; height: 450px; }
 
 /* *****サービス概要ページ***** */
-#daikou{ height: 880px; }
-#gps, #amazon{ height: 960px; }
+#daikou{ height: 960px; }
+#gps, #amazon{ height: 1120px; }
 #gps .container, #amazon .container, #daikou .container{ width: 1110px; }
 #gps, #daikou{ background-color: #fff; }
 #amazon{ background-color: #ccd7dd; }
-#gps h2, #amazon h2, #daikou h2{ width: 320px; display: block; margin: 0 auto; border-bottom: solid 3px #1f2e37; }
+#gps h2, #amazon h2, #daikou h2{ width: 320px; display: block; margin: 0 auto; position: relative; padding: 0.3em 0.5em;
+    background: linear-gradient(to top, rgb(3, 78, 135), #81a7c3); color: #fff;}
 #gps h3, #amazon h3, #daikou h3{ text-align: center; margin-bottom: 24px; }
 .container h2{ text-align: center; }
-.content1{ overflow: hidden; margin-bottom: 72px; }
+.content1{ overflow: hidden; margin-bottom: 72px; padding-bottom: 72px; border-bottom: 4px dotted #003657; }
 .content-left{ float: left; }
 .service_txt_right{ width: 600px; float: left; margin-left: 48px; }
 .service_txt_left{ width: 600px; float: left; }
@@ -165,17 +170,38 @@ iframe { width: 600px; height: 450px; }
 
 /* *****レスポンシブ***** */
 @media screen and (max-width:600px) {
-    h1{ left: 20px; font-size: 45px !important; }
-    #page-top h1 + span { font-size: 24px; top: 280px; left: 32px; }
+    /* *****TOPページ***** */
+    h1{ left: 20px; font-size: 40px !important; }
+    #page-top h1 + span { font-size: 24px; top: 296px; left: 32px; }
     .btn-outline-warning{ top: 270px; }
     #sec2 .lead{ text-align: left; }
     #sec5 ul{ width: 380px; padding: 0; }
     #sec5 li{ width: 380px; }
+    #footer .btn-outline-warning{ margin-top: -250px !important; margin-left: 50px !important; }
 
+    /* *****会社概要ページ***** */
     table { width: 380px; }
     th{ padding: 1px; font-size: 10px; }
     td{ padding: 16px 2px 16px 16px; width: 200px !important; }
     iframe { width: 300px; height: 240px; }
 
+    /* *****フォーム***** */
     .contact-form p { font-size: 15px; }
+
+    /* *****サービス概要ページ***** */
+    #daikou{ height: auto; }
+    #gps{ height: auto; }
+    #amazon{ height: auto; }
+    #gps .container, #amazon .container, #daikou .container{ width: 400px; }
+    .content-left{ float: none; width: 380px; }
+    .service_txt_right{ width: 380px; float: none; margin-left: 0;}
+    .service_txt_left{ width: 380px; float: none; }
+    .content-right{ float: none; }
+    .left-pic, .right-pic{ width: 380px; height:240px; margin-left: -4px; }
+    .content1{ overflow: visible; margin-bottom: 72px; padding-bottom: 0; border-bottom: none; }
+    #gps h3, #amazon h3, #daikou h3{ margin-top: 40px; }
+    #gps p, #amazon p, #daikou p{ line-height: 1.9; }
+    .res_pic{ margin-bottom: 40px !important; }
+
 }
+

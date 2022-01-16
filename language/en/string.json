@@ -1,8 +1,16 @@
 {
-    "label": {
-        "label1": "MAIN COPY",
-        "label2": "This is a demo site",
-        "label3": "Inquiry"
+    "top": {
+        "nav_1": "Company",
+        "nav_2": "Service",
+        "nav_3": "Inquiry",
+        "slide_1": "Connect with the system",
+        "slide_2": "To a free and convenient world",
+        "slide_3": "For a strong EC business",
+        "slide_4": "From operation to consulting",
+        "slide_5": "Easy to get what you want",
+        "slide_6": "Helping global business",
+        "label3": "Inquiry",
+        "footer-contact": "Contact us"
     },
 
     "contact": {
