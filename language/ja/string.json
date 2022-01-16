@@ -13,6 +13,14 @@
         "footer-contact": "お問い合わせはこちら"
     },
 
+    "about": {
+        "title": "会社概要"
+    },
+
+    "service": {
+        "title": "サービス"
+    },
+
     "contact": {
         "menu1": "メニュー",
         "menu2": "メニュー",

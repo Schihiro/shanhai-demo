@@ -13,6 +13,14 @@
         "footer-contact": "联系我们"
     },
 
+    "about": {
+        "title": "公司简介"
+    },
+
+    "service": {
+        "title": "服务"
+    },
+
     "contact": {
         "menu1": "菜单",
         "menu2": "菜单",

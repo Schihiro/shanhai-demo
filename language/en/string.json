@@ -13,6 +13,14 @@
         "footer-contact": "Contact us"
     },
 
+    "about": {
+        "title": "Company Profile"
+    },
+
+    "service": {
+        "title": "Service"
+    },
+
     "contact": {
         "menu1": "menu",
         "menu2": "menu",
